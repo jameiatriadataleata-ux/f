@@ -4,26 +4,26 @@
   "outputDirectory": "dist",
   "framework": "vite",
   "functions": {
-    "api/**/*.ts": {
+    "api/*.ts": {
       "includeFiles": "db.json"
     }
   },
   "rewrites": [
     {
       "source": "/api/health",
-      "destination": "/api/health.ts"
+      "destination": "/api/health"
     },
     {
       "source": "/api/health/",
-      "destination": "/api/health.ts"
+      "destination": "/api/health"
     },
     {
       "source": "/health",
-      "destination": "/api/health.ts"
+      "destination": "/api/health"
     },
     {
       "source": "/health/",
-      "destination": "/api/health.ts"
+      "destination": "/api/health"
     },
     {
       "source": "/api/(.*)",
