@@ -46,6 +46,7 @@ import { DepartmentPermissionsManager } from "./DepartmentPermissionsManager";
 import { expandPermissionsWithLegacyKeys } from "../data/departmentPermissionsRegistry";
 import { DashboardErrorBoundary } from "./DashboardErrorBoundary";
 import { AccessDeniedCard } from "./AccessDeniedCard";
+import { AdminChartsSection } from "./AdminChartsSection";
 
 interface AdminDashboardProps {
   data: {
@@ -1396,6 +1397,14 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                   </div>
                 </div>
               </div>
+
+              {/* RECHARTS INTERACTIVE ANALYTICS SECTION */}
+              <AdminChartsSection
+                teams={data.teams || []}
+                volunteers={data.volunteers || []}
+                initiatives={data.initiatives || []}
+                isDark={isDark}
+              />
             </div>
           )}
 
