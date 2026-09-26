@@ -1,0 +1,6 @@
+{
+  "name": "Reyadat Al-Ata Volunteer System",
+  "description": "نظام إدارة التطوع والرعاية الاجتماعية لجمعية ريادة العطاء لخدمة الإنسان بالعسيلة - إدارة المتطوعين والفرق والمبادرات وتوزيعات المساعدات للمستفيدين بمسح الباركود واستيراد البيانات.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
